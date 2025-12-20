@@ -1,0 +1,405 @@
+.country-expansion-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.country-flag {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.modal-flag {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 6px;
+}
+.section-title {
+  text-align: left;
+  color: #1A5F7A;
+  margin-bottom: 2.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #1A5F7A;
+}
+.countries-grid {
+  display: grid;
+  gap: 1rem; /* smaller, cleaner spacing */
+  width: 100%;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 1rem 0;
+}
+.country-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: all 0.25s ease-in-out;
+  height: 150px; /* all equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.10);
+}
+.country-flag {
+  width: 70px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.7rem;
+}
+.country-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1c4c6b;
+}
+
+.country-card:hover .country-flag {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.country-card h3 {
+  color: #1A5F7A;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.country-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.country-modal {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #f4f4f4;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1A5F7A;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background-color: #1A5F7A;
+  color: white;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.country-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  border-bottom: 2px solid #1A5F7A;
+  padding-bottom: 1.5rem;
+}
+
+.country-title h2 {
+  color: #1A5F7A;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: left;
+  gap: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.country-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.country-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.country-description,
+.country-economic-overview,
+.country-tech-landscape,
+.country-opportunities,
+.country-challenges {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.country-description h3,
+.country-economic-overview h3,
+.country-tech-landscape h3,
+.country-opportunities h3,
+.country-challenges h3 {
+  color: #1A5F7A;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #1A5F7A;
+  padding-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.country-description p,
+.country-economic-overview p,
+.country-tech-landscape p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: left;
+}
+
+.key-industries ul,
+.country-opportunities ul,
+.country-challenges ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.key-industries ul li,
+.country-opportunities ul li,
+.country-challenges ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+  text-align: left;
+}
+
+.key-industries ul li::before,
+.country-opportunities ul li::before,
+.country-challenges ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1A5F7A;
+  font-weight: bold;
+  text-align: left;
+}
+
+.key-industries h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1A5F7A;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+/* Dark Mode Styles */
+.dark .country-expansion-container {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+.dark .section-title {
+  color: #4DB8FF;
+}
+
+.dark .section-title::after {
+  background-color: #4DB8FF;
+}
+
+.dark .country-card {
+  background-color: #1E1E1E;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark .country-card:hover {
+  border-color: #4DB8FF;
+}
+
+.dark .country-card h3 {
+  color: #4DB8FF;
+}
+
+.dark .country-modal {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+}
+
+.dark .modal-close {
+  background-color: #2C2C2C;
+  color: #4DB8FF;
+}
+
+.dark .modal-close:hover {
+  background-color: #4DB8FF;
+  color: #121212;
+}
+
+.dark .country-title h2 {
+  color: #4DB8FF;
+}
+
+.dark .country-meta {
+  color: #A0A0A0;
+}
+
+.dark .country-description,
+.dark .country-economic-overview,
+.dark .country-tech-landscape,
+.dark .country-opportunities,
+.dark .country-challenges {
+  background-color: #2C2C2C;
+  text-align: left;
+}
+
+.dark .country-description h3,
+.dark .country-economic-overview h3,
+.dark .country-tech-landscape h3,
+.dark .country-opportunities h3,
+.dark .country-challenges h3 {
+  color: #4DB8FF;
+  border-bottom-color: #4DB8FF;
+  text-align: left;
+}
+
+.dark .key-industries ul li,
+.dark .country-opportunities ul li,
+.dark .country-challenges ul li {
+  color: #E0E0E0;
+  text-align: left;
+}
+
+.dark .key-industries ul li::before,
+.dark .country-opportunities ul li::before,
+.dark .country-challenges ul li::before {
+  color: #4DB8FF;
+  text-align: left;
+}
+
+.dark .country-description p,
+.dark .country-economic-overview p,
+.dark .country-tech-landscape p {
+  color: #E0E0E0;
+}
+
+.dark .key-industries h4 {
+  color: #4DB8FF;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .countries-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .country-card {
+    padding: 1rem;
+  }
+
+  .country-flag {
+    font-size: 3.5rem;
+  }
+
+  .country-modal {
+    width: 95%;
+    padding: 1.5rem;
+    max-height: 95vh;
+  }
+
+  .country-header {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .country-meta {
+    flex-direction: column;
+    align-items: left;
+    gap: 0.5rem;
+  }
+
+  .country-title h2 {
+    font-size: 2rem;
+  }
+
+  .country-meta {
+    font-size: 0.8rem;
+  }
+
+  .country-description h3,
+  .country-economic-overview h3,
+  .country-tech-landscape h3,
+  .country-opportunities h3,
+  .country-challenges h3 {
+    font-size: 1.2rem;
+  }
+
+  .country-description p,
+  .country-economic-overview p,
+  .country-tech-landscape p {
+    font-size: 0.95rem;
+  }
+}

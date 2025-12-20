@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Existing styles from previous implementation */
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  color: #1A5F7A;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #1A5F7A;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #1A5F7A;
+  color: #1A5F7A;
+}
+
+.hero-illustration {
+  flex: 1;
+  max-width: 50%;
+}
+
+.services-preview {
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-card {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card span {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .hero-illustration {
+    max-width: 100%;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,56 @@
+/* src/components/sections/Timeline.css - WITH VARIABLES */
+
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+.section-label {
+  /* BEFORE: color: #DE7A22; */
+  color: var(--secondary-900);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+  margin-top: 60px;
+}
+
+/* Connecting Line */
+.timeline-grid::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: 50px;
+  right: 50px;
+  height: 2px;
+  /* BEFORE: background: #E4EFF7; */
+  background: var(--primary-100);
+  z-index: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .timeline-grid::before {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,57 @@
+
+:root {
+    /* EarthLink Color Palette */
+    --primary-900: #0F4A71;
+    --primary-700: #195A87;
+    --primary-500: #2F6FA6;
+    --primary-100: #E4EFF7;
+  
+  --secondary-900: #064E3B;
+  --secondary-800: #065F46;
+  --secondary-700: #047857;
+  --secondary-600: #059669;
+  --secondary-500: #10B981;
+  --secondary-400: #34D399;
+  --secondary-300: #6EE7B7;
+  --secondary-200: #A7F3D0;
+  --secondary-100: #D1FAE5;
+  --secondary-50:  #ECFDF5;
+  
+    --neutral-900: #2A2A2A;
+    --neutral-700: #555555;
+    --neutral-300: #D5D5D5;
+    --neutral-100: #F7F9FB;
+    --neutral-000: #FFFFFF;
+  
+    --success: #2BAF71;
+    --warning: #E9A23B;
+    --danger: #D64545;
+  
+    /* Layout */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --container-width: 1200px;
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px rgba(15, 74, 113, 0.08);
+    --shadow-hover: 0 10px 30px rgba(15, 74, 113, 0.15);
+    
+    /* Spacing */
+    --section-padding: 100px;
+    --container-padding: 24px;
+  }
+
+  [data-theme="dark"] {
+  --primary-900: #4A9FDB; /* Lighter blue for dark bg */
+  --neutral-000: #1A1A1A; /* Dark background */
+  --neutral-700: #E5E5E5; /* Light text */
+}
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    :root {
+      --section-padding: 60px;
+      --container-padding: 16px;
+    }
+  }

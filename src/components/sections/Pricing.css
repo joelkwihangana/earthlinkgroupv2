@@ -1,0 +1,292 @@
+.pricing-section {
+  background: var(--neutral-000);
+}
+
+.pricing-subtitle {
+  max-width: 600px;
+  margin: 16px auto 0;
+  color: var(--neutral-700);
+  font-size: 18px;
+}
+
+/* Guarantees Grid - TRUST BUILDERS */
+.guarantees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Main Pricing Card */
+.pricing-card-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: var(--neutral-000);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 1px solid var(--neutral-300);
+}
+
+/* Left Side - Value Stack */
+.pricing-value-section {
+  padding: 48px;
+  background: var(--neutral-100);
+  border-right: 1px solid var(--neutral-300);
+}
+
+.value-section-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--primary-900);
+}
+
+.value-stack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.total-value-box {
+  background: var(--primary-900);
+  color: white;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-value-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.total-value-amount {
+  font-size: 32px;
+  font-weight: 800;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Right Side - Pricing Reveal */
+.pricing-reveal-section {
+  padding: 48px;
+  background: var(--neutral-000);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.discount-badge-large {
+  background: linear-gradient(135deg, var(--secondary-900), var(--secondary-500));
+  color: white;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(222, 122, 34, 0.3);
+}
+
+/* Price Display */
+.price-display {
+  text-align: center;
+}
+
+.price-old {
+  margin-bottom: 16px;
+}
+
+.price-label {
+  display: block;
+  font-size: 14px;
+  color: var(--neutral-700);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.price-strike {
+  font-size: 28px;
+  text-decoration: line-through;
+  color: var(--neutral-700);
+  opacity: 0.6;
+}
+
+.price-main {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--secondary-900);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: block;
+}
+
+/* Payment Options Toggle */
+.payment-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.payment-option-btn {
+  padding: 16px;
+  border: 2px solid var(--neutral-300);
+  background: var(--neutral-000);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.payment-option-btn:hover {
+  border-color: var(--primary-500);
+  background: var(--primary-100);
+}
+
+.payment-option-btn.active {
+  border-color: var(--primary-900);
+  background: var(--primary-900);
+  color: white;
+}
+
+/* Payment Details */
+.payment-details {
+  background: var(--primary-100);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.payment-amount {
+  display: block;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--primary-900);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-bottom: 8px;
+}
+
+.payment-description {
+  font-size: 14px;
+  color: var(--neutral-700);
+}
+
+/* CTA Stack */
+.cta-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cta-primary {
+  width: 100%;
+  font-size: 18px;
+  padding: 18px 32px;
+}
+
+.cta-secondary {
+  width: 100%;
+}
+
+.cta-note {
+  text-align: center;
+  font-size: 14px;
+  color: var(--neutral-700);
+  padding: 12px;
+  background: var(--success);
+  background: linear-gradient(135deg, rgba(43, 175, 113, 0.1), rgba(43, 175, 113, 0.05));
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(43, 175, 113, 0.3);
+}
+
+/* Social Proof in Pricing */
+.pricing-social-proof {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--neutral-100);
+}
+
+.social-proof-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.social-proof-avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -12px;
+}
+
+.social-proof-avatars img:first-child {
+  margin-left: 0;
+}
+
+.avatar-count {
+  margin-left: 8px;
+  font-weight: 700;
+  color: var(--secondary-900);
+}
+
+.social-proof-text {
+  font-size: 14px;
+  color: var(--neutral-700);
+}
+
+/* Footer Note */
+.pricing-footer-note {
+  max-width: 600px;
+  margin: 60px auto 0;
+  text-align: center;
+  padding: 32px;
+  background: var(--neutral-100);
+  border-radius: var(--radius-lg);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .pricing-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-value-section {
+    border-right: none;
+    border-bottom: 1px solid var(--neutral-300);
+  }
+  
+  .price-main {
+    font-size: 48px;
+  }
+  
+  .payment-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .pricing-value-section,
+  .pricing-reveal-section {
+    padding: 32px 24px;
+  }
+  
+  .guarantees-grid {
+    grid-template-columns: 1fr;
+  }
+}

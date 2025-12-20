@@ -1,0 +1,306 @@
+.services-page {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .services-hero {
+    background: linear-gradient(135deg, #1A5F7A 0%, #2C7DA0 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .services-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .services-header p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .services-subheader {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  
+  .stat-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .stat-card h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(26, 95, 122, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #1A5F7A;
+  }
+  
+  .service-card h3 {
+    color: #1A5F7A;
+    margin-bottom: 15px;
+  }
+  
+  .service-benefits {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .service-benefits h4 {
+    color: #1A5F7A;
+    margin-bottom: 10px;
+  }
+  
+  .service-benefits ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-benefits li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .service-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #1A5F7A;
+  }
+  
+  .cta-section {
+    background-color: #1A5F7A;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #14ab2e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .services-subheader {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  /* Add these new styles to the existing CSS */
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(26, 95, 122, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(26, 95, 122, 0.15);
+  }
+  
+  .service-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-icon-container {
+    background-color: rgba(26, 95, 122, 0.1);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  
+  .service-icon {
+    font-size: 2.5em;
+    color: #1A5F7A;
+  }
+  
+  .service-title-container h3 {
+    color: #1A5F7A;
+    margin: 0;
+    font-size: 1.4em;
+  }
+  
+  .service-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .service-benefits-section {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .benefits-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .benefits-toggle h4 {
+    color: #1A5F7A;
+    margin: 0;
+  }
+  
+  .toggle-icon {
+    font-size: 1.5em;
+    color: #1A5F7A;
+    transition: transform 0.3s ease;
+  }
+  
+  .benefits-list {
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  
+  .benefits-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .checkmark {
+    color: #1A5F7A;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .learn-more-btn {
+    margin-top: 20px;
+    background-color: #1A5F7A;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #2C7DA0;
+  }
+
+  /* Add or modify these styles */
+.services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .first-row, .second-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .first-row, 
+    .second-row,
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .first-row, 
+    .second-row,
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Existing service card styles remain the same */

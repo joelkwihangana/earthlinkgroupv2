@@ -1,0 +1,19 @@
+.f-badge {
+    background: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--neutral-300);
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .f-badge {
+      font-size: 12px;
+      padding: 4px 10px;
+    }
+  }

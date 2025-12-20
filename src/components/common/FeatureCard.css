@@ -1,0 +1,72 @@
+/* src/components/common/FeatureCard.css */
+
+.feature-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 24px;
+  background: var(--neutral-000);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--neutral-100);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-100);
+}
+
+/* Icon Container */
+.f-icon-box {
+  min-width: 50px;
+  height: 50px;
+  background: var(--primary-100);
+  color: var(--primary-900);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents icon box from shrinking */
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .f-icon-box {
+  background: var(--primary-900);
+  color: var(--neutral-000);
+  transform: scale(1.1);
+}
+
+/* Content */
+.feature-content {
+  flex: 1;
+  text-align: left;
+}
+
+.feature-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-900);
+  margin-bottom: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: var(--neutral-700);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .feature-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .f-icon-box {
+    margin: 0 auto;
+  }
+}

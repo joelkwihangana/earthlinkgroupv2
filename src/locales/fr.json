@@ -1,0 +1,50 @@
+{
+    "header": {
+      "phone": "+250 788 447 599",
+      "email": "director@earthlinkgroup.com"
+    },
+    "aboutUs": {
+      "heroTitle": "Développer la Croissance Mondiale des Entreprises",
+      "heroSubtitle": "EarthLink Business est un consultant pionnier en expansion mondiale, dédié à transformer les entreprises en success stories internationales.",
+      "missionTitle": "Notre Mission",
+      "missionDescription": "Être le partenaire premier de l'expansion commerciale mondiale, fournissant des stratégies innovantes, des perspectives de marché approfondies et un support complet qui permet aux entreprises de naviguer et de réussir avec confiance sur les marchés internationaux.",
+      "valuesTitle": "Valeurs Fondamentales",
+      "values": {
+        "globalPerspective": {
+          "title": "Perspective Globale",
+          "description": "Embrasser les paysages culturels et économiques diversifiés"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Évolution continue des stratégies pour le succès mondial"
+        },
+        "partnership": {
+          "title": "Partenariat",
+          "description": "Construire des relations durables et mutuellement bénéfiques"
+        },
+        "integrity": {
+          "title": "Intégrité",
+          "description": "Maintenir les plus hauts standards de professionnalisme"
+        }
+      },
+      "teamTitle": "Rencontrez Nos Experts Mondiaux",
+      "ctaTitle": "Prêt à Transformer Votre Stratégie d'Entreprise Mondiale ?",
+      "ctaSubtitle": "Connectez-vous avec nos experts et libérez le potentiel international de votre entreprise"
+    },
+    "countryExpansion": {
+      "title": "Notre Expansion Commerciale à Travers l'Afrique",
+      "overview": "Aperçu du Pays",
+      "economicOverview": "Paysage Économique",
+      "keyIndustries": "Industries Clés",
+      "technologicalLandscape": "Écosystème Technologique",
+      "businessOpportunities": "Opportunités Commerciales",
+      "challengesAndOpportunities": "Défis et Potentiel",
+      "description": "Explorez nos marchés stratégiques et nos interventions technologiques innovantes à travers le continent africain.",
+      "modalSubtitle": "Découvrez le Potentiel Commercial",
+      "metaLabels": {
+        "capital": "Capitale",
+        "population": "Population",
+        "gdp": "PIB"
+      }
+    }
+}

@@ -1,0 +1,62 @@
+.stat-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  /* transition: all 0.3s ease; */
+}
+
+.stat-num {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--secondary-900);
+  display: block;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Smooth font rendering for large numbers */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stat-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  color: var(--neutral-000);
+  font-weight: 500;
+}
+
+/* Animation entrance effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Stagger animations (each card appears slightly after previous) */
+.stat-card:nth-child(1) { animation-delay: 0s; }
+.stat-card:nth-child(2) { animation-delay: 0.1s; }
+.stat-card:nth-child(3) { animation-delay: 0.2s; }
+.stat-card:nth-child(4) { animation-delay: 0.3s; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stat-num {
+    font-size: 40px;
+  }
+  
+  .stat-label {
+    font-size: 12px;
+  }
+}

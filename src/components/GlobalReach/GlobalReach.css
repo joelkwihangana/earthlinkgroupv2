@@ -1,0 +1,139 @@
+.global-reach-section {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .global-reach-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .global-reach-content h2 {
+    color: #1A5F7A;
+    margin-bottom: 40px;
+  }
+  
+  .global-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .stat-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-card h3 {
+    color: #1A5F7A;
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .global-description {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .global-stats {
+      flex-direction: column;
+    }
+  
+    .stat-card {
+      margin: 10px 0;
+    }
+  }
+
+  /* --- Base Styles (Mobile First) --- */
+
+.capabilities-grid {
+  display: flex;
+  flex-direction: column;   /* stack on mobile */
+  padding: 1rem;
+  gap: 1rem;
+  text-align-last: left;
+}
+
+.capabilities-grid-img {
+  display: none; /* Hide map image on mobile */
+}
+
+.capabilities-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.capabilities-grid-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.capabilities-grid-contents-right {
+  width: 100%;
+}
+
+.capability-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-align: left;
+}
+
+.capability-card p,
+.capability-card h4 {
+  text-align: left;
+}
+
+/* --- Tablet & Larger Screens --- */
+@media (min-width: 768px) {
+  .capabilities-grid {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .capabilities-grid-img {
+    display: block; /* Show image on tablet/desktop */
+    width: 45%;
+  }
+
+  .capabilities-grid img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .capabilities-grid-contents {
+    width: 55%;
+  }
+}
+
+/* --- Desktop Large Screens --- */
+@media (min-width: 1200px) {
+  .capabilities-grid {
+    gap: 2rem;
+  }
+
+  .capabilities-grid-img {
+    width: 40%;
+  }
+
+  .capabilities-grid-contents {
+    width: 60%;
+  }
+
+  .capability-card {
+    gap: 1.5rem;
+  }
+}

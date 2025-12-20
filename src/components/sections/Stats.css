@@ -1,0 +1,66 @@
+
+.stats-section {
+  background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-700) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Vertical dividers between stat cards (desktop only) */
+@media (min-width: 969px) {
+  .stats-grid {
+    gap: 60px; /* More space for dividers */
+  }
+  
+  /* Add vertical line after each card except the last */
+  .stat-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -30px; /* Half of gap */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Make stat-card position relative so ::after works */
+  .stat-card {
+    position: relative;
+  }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

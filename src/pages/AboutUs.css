@@ -1,0 +1,278 @@
+
+.about-us-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    color: #1A5F7A;
+    margin-bottom: 15px;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  
+  .about-mission, .about-values {
+    flex: 1;
+  }
+  
+  .about-mission h2, .about-values h2 {
+    color: #1A5F7A;
+    margin-bottom: 20px;
+  }
+  
+  .about-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-values li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  }
+
+  .about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.about-section {
+  margin-bottom: 60px;
+}
+
+.section-content {
+  width: 100%;
+}
+
+.about-section h2 {
+  color: #1A5F7A;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+}
+
+/* Mission Section Styles */
+.mission-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.mission-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Values Section Styles */
+.values-section {
+  background-color: white;
+  padding: 40px 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(26, 95, 122, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  display: block;
+  color: #1A5F7A;
+}
+
+/* Team Section Styles */
+.team-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Rest of the existing CSS remains the same */
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Add or modify these styles for team member images */
+.member-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(26, 95, 122, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .member-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom, 
+      rgba(26, 95, 122, 0.1), 
+      rgba(26, 95, 122, 0.3)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover .member-image {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(26, 95, 122, 0.15);
+  }
+  
+  .team-member:hover .member-image::before {
+    opacity: 1;
+  }
+  
+  .team-member:hover .member-image img {
+    transform: scale(1.05);
+  }
+  
+  /* Optional: Add a hover effect for team member details */
+  .team-member:hover .member-details {
+    background-color: #f9f9f9;
+  }
+  
+  /* Ensure consistent styling across different screen sizes */
+  @media (max-width: 1024px) {
+    .member-image img {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .member-image img {
+      height: 250px;
+    }
+  }
+
+  /* Add these styles for text overlay on team member images */
+.member-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(26, 95, 122, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .member-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      to top, 
+      rgba(26, 95, 122, 0.8), 
+      rgba(26, 95, 122, 0.5)
+    );
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .team-member:hover .member-image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .member-image-overlay h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  
+  .member-image-overlay p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .member-image-overlay .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .member-image-overlay .social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  .member-image-overlay .social-icon:hover {
+    color: #FFD700; /* Secondary color from design system */
+  }

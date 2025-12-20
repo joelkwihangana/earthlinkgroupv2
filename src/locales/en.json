@@ -1,0 +1,50 @@
+{
+  "header": {
+    "phone": "+250 788 447 599",
+    "email": "director@earthlinkgroup.com"
+  },
+  "aboutUs": {
+    "heroTitle": "Empowering Global Business Growth",
+    "heroSubtitle": "EarthLink Business is a pioneering global expansion consultancy dedicated to transforming businesses into international success stories.",
+    "missionTitle": "Our Mission",
+    "missionDescription": "To be the premier global business expansion partner, providing innovative strategies, deep market insights, and comprehensive support that empowers businesses to confidently navigate and succeed in international markets.",
+    "valuesTitle": "Core Values",
+    "values": {
+      "globalPerspective": {
+        "title": "Global Perspective",
+        "description": "Embracing diverse cultural and economic landscapes"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Continuously evolving strategies for global success"
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "Building long-term, mutually beneficial relationships"
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Maintaining highest standards of professionalism"
+      }
+    },
+    "teamTitle": "Meet Our Global Experts",
+    "ctaTitle": "Ready to Transform Your Global Business Strategy?",
+    "ctaSubtitle": "Connect with our experts and unlock your business's international potential"
+  },
+  "countryExpansion": {
+    "title": "Our Business Expansion Across Africa",
+    "overview": "Country Overview",
+    "economicOverview": "Economic Landscape",
+    "keyIndustries": "Key Industries",
+    "technologicalLandscape": "Technological Ecosystem",
+    "businessOpportunities": "Business Opportunities",
+    "challengesAndOpportunities": "Challenges and Potential",
+    "description": "Explore our strategic markets and innovative technological interventions across the African continent.",
+    "modalSubtitle": "Discover Business Potential",
+    "metaLabels": {
+      "capital": "Capital",
+      "population": "Population",
+      "gdp": "GDP"
+    }
+  }
+}

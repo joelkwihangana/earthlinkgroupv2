@@ -1,0 +1,264 @@
+.final-cta-section {
+  background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-700) 100%);
+  color: var(--neutral-000);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated background pattern */
+.final-cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Scarcity Banner */
+.scarcity-banner {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: rgba(233, 162, 59, 0.2);
+  border: 2px solid var(--warning);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  animation: pulse-border 2s infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% { border-color: var(--warning); }
+  50% { border-color: var(--danger); }
+}
+
+.scarcity-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--warning);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  animation: shake 3s infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(-5deg); }
+  20% { transform: rotate(5deg); }
+}
+
+.scarcity-content {
+  flex: 1;
+}
+
+.scarcity-title {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.scarcity-text {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Seats Progress Bar */
+.seats-progress {
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.progress-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.progress-count strong {
+  color: var(--warning);
+}
+
+.progress-bar-bg {
+  height: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--warning), var(--secondary-900));
+  border-radius: 10px;
+  position: relative;
+  transition: width 1s ease;
+  overflow: hidden;
+}
+
+/* Animated shine effect on progress bar */
+.progress-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  to { left: 100%; }
+}
+
+/* Main CTA Content */
+.final-cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: var(--neutral-000);
+}
+
+.final-cta-subtitle {
+  font-size: 20px;
+  margin-bottom: 32px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Quick Benefits */
+.quick-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.quick-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.benefit-icon {
+  color: var(--success);
+  flex-shrink: 0;
+}
+
+/* CTA Buttons */
+.final-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.final-cta-primary {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px 40px;
+  background: var(--secondary-900);
+  box-shadow: 0 8px 24px rgba(222, 122, 34, 0.4);
+}
+
+.final-cta-primary:hover {
+  background: var(--secondary-500);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(222, 122, 34, 0.5);
+}
+
+.final-cta-secondary {
+  width: 100%;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--neutral-000);
+}
+
+.final-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--neutral-000);
+}
+
+/* Trust Signal */
+.final-trust-signal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(43, 175, 113, 0.2);
+  border: 1px solid var(--success);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+}
+
+.final-trust-signal strong {
+  color: var(--success);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .final-cta-title {
+    font-size: 32px;
+  }
+  
+  .final-cta-subtitle {
+    font-size: 16px;
+  }
+  
+  .quick-benefits {
+    grid-template-columns: 1fr;
+  }
+  
+  .scarcity-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .progress-header {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

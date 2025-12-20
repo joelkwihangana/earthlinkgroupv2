@@ -1,0 +1,80 @@
+.testimonials-section {
+  background: var(--neutral-100);
+  overflow: hidden; /* Hide cards that go off-screen */
+}
+
+/* Container that masks overflow */
+.testimonials-track-container {
+  margin-top: 60px;
+  overflow: hidden;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Add fade effect on edges */
+.testimonials-track-container::before,
+.testimonials-track-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.testimonials-track-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--neutral-100), transparent);
+}
+
+.testimonials-track-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--neutral-100), transparent);
+}
+
+/* The scrolling track */
+.testimonials-track {
+  display: flex;
+  gap: 0; /* No gap, cards have their own margin */
+  animation: scroll 25s linear infinite;
+  width: fit-content;
+}
+
+/* 🔥 THE MAGIC ANIMATION */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move left by exactly half the width (one set of testimonials) */
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.testimonials-track.paused {
+  animation-play-state: paused;
+}
+
+/* Hint text */
+.testimonials-hint {
+  text-align: center;
+  margin-top: 32px;
+  color: var(--neutral-700);
+  font-size: 14px;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonials-track {
+    animation-duration: 30s; /* Faster on mobile */
+  }
+  
+  .testimonials-track-container::before,
+  .testimonials-track-container::after {
+    width: 50px; /* Smaller fade on mobile */
+  }
+}

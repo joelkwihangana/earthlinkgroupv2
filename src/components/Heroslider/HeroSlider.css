@@ -1,0 +1,98 @@
+/* Make the slider full width and remove left/right margins */
+.hero-slider {
+  width: 100%;
+  height: 480px;            /* adjust height as needed */
+  position: relative;
+  overflow: hidden;
+  margin: 0;                /* remove margins */
+  padding: 0;               /* remove padding */
+}
+
+/* Each slide covers the full slider area */
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease;
+  transform: scale(1.02);
+  display: flex;
+  align-items: center;
+}
+
+/* Active slide is visible */
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+/* subtle dark overlay to improve text contrast */
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, 
+  rgba(26,95,122,0.8) 0%,   /* stronger color on the left */
+    rgba(26,95,122,0.5) 45%,  /* medium color in the middle */
+    rgba(26,95,122,10) 100%) ;
+  pointer-events: none;
+}
+
+
+/* Move content to the RIGHT and align text right */
+.slide-content {
+  position: relative;
+  z-index: 3;
+  max-width: 640px;
+  margin-left: auto;        /* pushes it to the right */
+  padding: 28px 36px;
+  text-align: left;        /* align title and subtitle to the right */
+  color: #ffffff;
+}
+
+/* Title & subtitle styling */
+.slide-title {
+  margin: 0 0 12px 0;
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #f0f9fa;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+.slide-sub {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255,255,255,0.92);
+  max-width: 48ch;
+}
+
+/* Responsive sizes */
+@media (min-width: 768px) {
+  .hero-slider { height: 340px; }
+  .slide-title { font-size: 42px; }
+  .slide-sub { font-size: 18px; }
+}
+
+@media (min-width: 1200px) {
+  .slide-content { padding-right: 60px; } /* space from right edge */
+  .slide-title { font-size: 48px; }
+}
+.discover-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(26,95,122);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: rgb(20, 70, 90);
+  transform: translateY(-2px);
+}
