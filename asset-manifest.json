@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/earthlinkgroupv2/static/css/main.7cadf4db.css",
+    "main.js": "/earthlinkgroupv2/static/js/main.37caec80.js",
+    "static/media/global.png": "/earthlinkgroupv2/static/media/global.4dae827bb70918f6af27.png",
+    "static/media/convention1.jpeg": "/earthlinkgroupv2/static/media/convention1.b69faf8e79635060c851.jpeg",
+    "static/media/mozambique.jpg": "/earthlinkgroupv2/static/media/mozambique.1887db7d65fd883120fd.jpg",
+    "static/media/Logoreal.png": "/earthlinkgroupv2/static/media/Logoreal.1bd7c077ca8be21fa760.png",
+    "static/media/ceo.jpg": "/earthlinkgroupv2/static/media/ceo.e519777893be1e8470bc.jpg",
+    "static/media/tanzania.jpg": "/earthlinkgroupv2/static/media/tanzania.a5a7b91088f9dac2af0d.jpg",
+    "static/media/map.jpeg": "/earthlinkgroupv2/static/media/map.5abbf3e1568f336e5bea.jpeg",
+    "static/media/Mozambiqueflag.png": "/earthlinkgroupv2/static/media/Mozambiqueflag.a7cf3ffc1c1cc2ce7d49.png",
+    "static/media/Angolaflag.png": "/earthlinkgroupv2/static/media/Angolaflag.5835d82c9b004604d063.png",
+    "static/media/seo.jpg": "/earthlinkgroupv2/static/media/seo.89e1c63731a48bd8ad96.jpg",
+    "static/media/secretary.jpg": "/earthlinkgroupv2/static/media/secretary.5bf04170eab15b6313c2.jpg",
+    "index.html": "/earthlinkgroupv2/index.html",
+    "main.7cadf4db.css.map": "/earthlinkgroupv2/static/css/main.7cadf4db.css.map",
+    "main.37caec80.js.map": "/earthlinkgroupv2/static/js/main.37caec80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cadf4db.css",
+    "static/js/main.37caec80.js"
+  ]
+}
