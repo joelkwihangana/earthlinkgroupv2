@@ -3,13 +3,14 @@
 
 export const ctaLinks = {
   // Google Form for applications
-  application: "https://forms.google.com/your-actual-form-id",
+  application:
+    "https://docs.google.com/forms/d/e/1FAIpQLScQ96jjVcC52xUl29qeQhn30BCso1R39AvP3JDwWL004lqteQ/viewform",
 
   // WhatsApp contact (replace with your number)
   whatsapp: "", // remember to add whatsapp link later
 
   // Calendly or booking link
-  consultation: "https://calendly.com/earthlink/consultation",
+  consultation: "https://calendly.com/earthlinkgroup",
 
   // Brochure download (Google Drive link or email capture)
   brochure:

@@ -57,8 +57,7 @@ const Hero = () => {
           <div className="hero-actions">
             <Button
               variant="primary"
-              // href={ctaLinks.application} //remember to uncomment when ready
-              href="#"
+              href={ctaLinks.application} 
               external={true}
             >
               🚀 Start Application

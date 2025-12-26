@@ -5,7 +5,7 @@ import "./Stats.css";
 
 const Stats = () => {
   return (
-    <section className="section-padding bg-dark stats-section">
+    <section className="stats-section section-padding">
       <div className="container">
         <div className="stats-grid">
           {stats.map((stat) => (
