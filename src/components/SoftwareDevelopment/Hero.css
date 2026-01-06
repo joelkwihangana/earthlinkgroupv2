@@ -1,0 +1,124 @@
+/* src/components/sections/Hero.css */
+
+.hero {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--neutral-100) 0%, #fff 100%);
+}
+.hero h1,h2,h3{
+   color: var(--primary-900);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: letf;
+}
+
+.hero-pre {
+  color: var(--secondary-900);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.hero-sub {
+  font-size: 14px;        /* smaller text */
+  line-height: 1.6;
+  color: var(--neutral-600);
+  max-width: 420px;       /* prevents full-width paragraph */
+}
+
+.feature-badges {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Urgency Box */
+.urgency-box {
+  margin-top: 32px;
+  background: var(--secondary-100);
+  border: 1px solid var(--secondary-500);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer-digits {
+  display: flex;
+  gap: 10px;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--danger);
+}
+
+/* Video Section */
+.hero-video {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 8px solid white;
+}
+
+.hero-video img {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.play-button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .urgency-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}

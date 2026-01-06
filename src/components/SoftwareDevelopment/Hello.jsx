@@ -3,8 +3,9 @@ import { Contact, Download, Play } from "lucide-react";
 import Button from "../common/Button";
 import Badge from "../common/Badge";
 import "./Hero.css";
-import "../../styles/global.css";
+//import "../../styles/global.css";
 import { ctaLinks } from "../../config/ctaLinks";
+import software from "../../assets/Image/so.png";
 
 const Hero = () => {
   // Countdown timer state
@@ -33,42 +34,42 @@ const Hero = () => {
   }, []);
 
   return (
-    <header className="hero">
+    <header className="hero hero-text">
       <div className="container hero-grid">
         {/* Left Column - Content */}
         <div>
-          <span className="hero-pre">🎯 Africa's Premier Graduate Program</span>
+          {/*<span className="hero-pre">🎯 Software Development Services</span>*/}
 
-          <h1>From Graduate to Employed Professional in 6 Months</h1>
+          <h1>Software development</h1>
 
-          <p className="hero-sub">
-            A comprehensive intensive program that transforms fresh graduates
-            into industry-ready professionals with guaranteed job interviews.
+          <p className="hero-text hero-sub">
+          We build secure, scalable, and high-performance software solutions tailored to your business needs. From idea to deployment, our team transforms 
+          complex requirements into reliable digital products that drive growth and efficiency.
           </p>
 
           {/* Feature Badges */}
           <div className="feature-badges">
-            <Badge>95% Placement</Badge>
-            <Badge>Paid Internships</Badge>
-            <Badge>7 Countries</Badge>
+            <Badge>software development</Badge>
+            <Badge>mobile application development</Badge>
+            <Badge>Web Design & Digital Marketing</Badge>
           </div>
 
           {/* CTA Buttons */}
           <div className="hero-actions">
             <Button
               variant="primary"
-              href={ctaLinks.appliation} 
+              href={ctaLinks.consultation} 
               external={true}
             >
-              🚀 Start Application
+             Schedule a meeting
             </Button>
-            <Button variant="outline" href={ctaLinks.brochure} external={true}>
+            {/*<Button variant="outline" href={ctaLinks.brochure} external={true}>
               <Download size={18} />
               Download Brochure
-            </Button>
+            </Button>*/}
           </div>
 
-          {/* Urgency Box */}
+          {/* Urgency Box 
           <div className="urgency-box">
             <div>
               <strong style={{ color: "var(--danger)" }}>
@@ -80,21 +81,21 @@ const Hero = () => {
               <span>{timeLeft.days}d</span> :<span>{timeLeft.hours}h</span> :
               <span>{timeLeft.minutes}m</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Column - Video */}
-        <div className="hero-video">
+        <div className="">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            src= {software}
             alt="Students collaborating"
           />
-          <div className="play-button">
+         {/*  <div className="play-button">
             <Play fill="white" color="white" size={32} />
           </div>
-          <div className="video-caption">
+         <div className="video-caption">
             "How I got hired in 3 months" - Jean-Claude
-          </div>
+          </div>*/}
         </div>
       </div>
     </header>

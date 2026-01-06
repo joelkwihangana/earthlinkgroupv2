@@ -279,7 +279,6 @@
     gap: 30px;
     margin-bottom: 40px;
   }
-  
   .first-row, .second-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -302,5 +301,4 @@
       grid-template-columns: 1fr;
     }
   }
-  
-  /* Existing service card styles remain the same */
+

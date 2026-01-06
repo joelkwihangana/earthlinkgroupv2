@@ -121,9 +121,9 @@ function Header() {
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li><Link to="/">Home</Link></li>
+           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/services">Services</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="Placement">Placement Accelerator</Link></li>
+          {/*<li><Link to="Placement">Placement Accelerator</Link></li>*/}
           <li><Link to="/contact">Contact</Link></li>
           {/*<li className="login-btn"><Link to="/login">Login</Link></li>*/}
         </ul>

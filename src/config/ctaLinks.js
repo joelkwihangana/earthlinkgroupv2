@@ -5,6 +5,7 @@ export const ctaLinks = {
   // Google Form for applications
   application:
     "https://docs.google.com/forms/d/e/1FAIpQLScQ96jjVcC52xUl29qeQhn30BCso1R39AvP3JDwWL004lqteQ/viewform",
+    
 
   // WhatsApp contact (replace with your number)
   whatsapp: "", // remember to add whatsapp link later
