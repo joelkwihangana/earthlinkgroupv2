@@ -7,8 +7,8 @@ import "./Software.js";
 // Service data array
 export const servicesData = [
   {
-    slug: "international-study-tours",
-    title: "International Study Tours",
+    slug: "International Business Tours",
+    title: "International Business Tours",
     description:
       "Participants engage with local stakeholders, visit business hubs, and gain actionable insights.",
     icon: "🌍",
@@ -19,18 +19,18 @@ export const servicesData = [
     title: "Cross-Border Consulting",
     description:
       "Expert guidance on navigating legal, cultural, and economic complexities.",
-    icon: "📊",
-    fullDescription: "Add your full description here later.",
-  },
-  {
-    slug: "sales-as-a-service",
-    title: "Sales As A Service",
-    description:
-      "We empower companies to activate new markets and start selling effectively.",
     icon: "🤝",
     fullDescription: "Add your full description here later.",
   },
   {
+    slug: "Training",
+    title: "Training",
+    description:
+      "We empower companies to activate new markets and start selling effectively.",
+    icon: "📜",
+    fullDescription: "Add your full description here later.",
+  },
+  /*{
     slug: "international-market-research",
     title: "International Market Research",
     description:
@@ -44,10 +44,10 @@ export const servicesData = [
     description: "Comprehensive support for meeting international regulations.",
     icon: "📜",
     fullDescription: "Add your full description here later.",
-  },
+  },*/
   {
     slug: "software",
-    title: "Software Development & Website Design",
+    title: "IT Consulting",
     description:
       "Smart digital solutions to grow and strengthen online presence.",
     icon: "💻",
@@ -55,6 +55,21 @@ export const servicesData = [
     link: "/software",
   },
 ];
+
+<div className="contact-hero">
+        <motion.div 
+          className="contact-hero-content"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1>Let's Expand Your Business Together</h1>
+          <p>
+            Connect with our global expansion experts and transform 
+            your international business strategy
+          </p>
+        </motion.div>
+      </div>
 
 // Single Service Card Component
 const ServiceCard = ({ service, index }) => {
@@ -86,7 +101,9 @@ const ServiceCard = ({ service, index }) => {
         Learn More
       </motion.button>
     </motion.div>
+    
   );
+  
 };
 
 // Main Services Page Component
