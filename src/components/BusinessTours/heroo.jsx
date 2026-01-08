@@ -40,19 +40,19 @@ const Hero = () => {
         <div>
           {/*<span className="hero-pre">🎯 Software Development Services</span>*/}
 
-          <h1>Software development</h1>
+          <h1>International Business Tours</h1>
 
           <p className="hero-text hero-sub">
-          We build secure, scalable, and high-performance software solutions tailored to your business needs. From idea to deployment, our team transforms 
-          complex requirements into reliable digital products that drive growth and efficiency.
+          We organize and manage end-to-end international business tours designed to help participants explore new markets and build strategic connections. Our service includes travel planning, logistics, and coordination of meetings with local stakeholders. Participants visit key business hubs, companies, and innovation centers, gaining first-hand exposure 
+          and actionable insights to support informed decision-making and sustainable business growth.
           </p>
 
           {/* Feature Badges */}
-          <div className="feature-badges">
+          {/*<div className="feature-badges">
             <Badge>Software development</Badge>
             <Badge>Mobile application development</Badge>
             <Badge>Web Design & Digital Marketing</Badge>
-          </div>
+          </div>*/}
 
           {/* CTA Buttons */}
           <div className="hero-actions">

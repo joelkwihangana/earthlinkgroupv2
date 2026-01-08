@@ -8,6 +8,7 @@ import {
   FaHandshake,
   FaUsers,
   FaTrophy,
+  FaPlane
 } from "react-icons/fa";
 import "./GlobalReach.css";
 import businessImage from "../../assets/map.jpeg";
@@ -63,6 +64,12 @@ const GlobalReach = () => {
       title: "Operational Excellence",
       description:
         "Implement world-class methodologies and best practices, ensuring seamless operations, compliance, and competitive advantage in global markets.",
+    },
+     {
+      icon: FaPlane,
+      title: "Organize Business Trips",
+      description:
+        "We organize seamless business trips across different countries, handling planning, logistics, and coordination so you can focus on building partnerships, exploring new markets, and driving business growth.",
     },
   ];
 

@@ -7,7 +7,7 @@ import gabonflag from '../../assets/Flag/Gabonflag.png';
 import zambiaflag from '../../assets/Flag/zambiaflag.png';
 import mozambiqueflag from '../../assets/Flag/Mozambiqueflag.png';
 import tanzaniaflag from '../../assets/Flag/tanzaniaflag.png';
-import angolaflag from '../../assets/Flag/Angolaflag.png';
+import DRCflag from '../../assets/Flag/DRC.png';
 
 const countries = [
   {
@@ -173,13 +173,13 @@ const countries = [
     ],
   },
   {
-    name: "Angola",
-     image: angolaflag,
+    name: "DRC",
+     image: DRCflag,
     flag: "🇦🇴",
-    capital: "Luanda",
-    population: "37.9million",
-    gdp: "$92.1 billion",
-    keyIndustries: ["Oil and Gas", "Mining", "Manufacturing", "Agriculture"],
+    capital: "Kinshasa",
+    population: "109 million",
+    gdp: "$74-79 billion",
+    keyIndustries: ["Mining", "Manufacturing", "Agriculture", "Forestry" , "Energy"],
     opportunities: [
       "Energy Sector Digitalization",
       "Urban Infrastructure Tech",

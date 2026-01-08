@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Services.css";
 import "./Software.js";
+import "./Tours.js";
 
 // Service data array
 export const servicesData = [
@@ -13,6 +14,7 @@ export const servicesData = [
       "Participants engage with local stakeholders, visit business hubs, and gain actionable insights.",
     icon: "🌍",
     fullDescription: "Add your full description here later.",
+    link: "/Tours",
   },
   {
     slug: "cross-border-consulting",

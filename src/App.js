@@ -16,6 +16,7 @@ import CountryExpansionOpportunities from "./components/CountryExpansionOpportun
 import "./components/CountryExpansionOpportunities/CountryExpansionOpportunities.css";
 import PlacementAccelerator from "./pages/PlacementAccelerator";
 import Software from "./pages/Software";
+import Tours from "./pages/Tours";
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/Placement" element={<PlacementAccelerator />} />
           <Route path="/software" element={<Software />} />
+          <Route path="/Tours" element={<Tours />} />
+
         </Routes>
         <Footer />
       </div>
