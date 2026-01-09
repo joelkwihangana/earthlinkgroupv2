@@ -1,24 +1,24 @@
-export const Features = [
+export const featuresBorder = [
   {
     id: 1,
     icon: "MapPinned",
-    title: "End-to-End Tour Planning & Logistics",
+    title: "Market Entry Strategy & Feasibility",
     description:
-      "We design and manage complete international business tours, covering travel arrangements, accommodation, schedules, and on-ground coordination for a smooth and efficient experience.",
+      "We analyze target markets to assess opportunities, competition, legal requirements, and cultural factors, helping you choose the right entry strategy for sustainable growth.",
   },
   {
     id: 2,
     icon: "Handshake",
-    title: "Business Hub Visits & Stakeholder Engagement",
+    title: "Regulatory & Compliance Support",
     description:
-      "Participants visit key business hubs and companies while engaging with local stakeholders, industry leaders, and potential partners to build strategic connections.",
+      "We assist businesses in understanding and meeting local laws, taxation, licensing, and regulatory frameworks to ensure smooth and compliant operations in the new country.",
   },
   {
     id: 3,
     icon: "Globe2",
-    title: "Market Insights & Growth Opportunities",
+    title: "Local Partnerships & Operational Setup",
     description:
-      "We provide practical insights into local markets, business environments, and cultural practices, enabling informed decisions and supporting sustainable business expansion.",
+      "We connect you with reliable local partners, suppliers, and stakeholders, and support you in setting up operations, distribution channels, and business processes on the ground.",
   },
   //{
    // id: 4,

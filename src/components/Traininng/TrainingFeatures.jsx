@@ -1,9 +1,9 @@
 import React from "react";
 import FeatureCard from "../common/FeatureCard";
-import { featuresTours } from "./featuresTours";
 import "./Features.css";
+import { featuresTraining } from "./featuresTraining";
 
-const Features = () => {
+const TrainingFeatures = () => {
   return (
     <section className="section-padding bg-light">
       <div className="container">
@@ -14,7 +14,7 @@ const Features = () => {
 
         {/* Features Grid */}
         <div className="features-grid">
-          {featuresTours.map((feature) => (
+          {featuresTraining.map((feature) => (
             <FeatureCard
               key={feature.id}
               icon={feature.icon}
@@ -28,4 +28,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default TrainingFeatures;

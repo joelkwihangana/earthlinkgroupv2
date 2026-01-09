@@ -20,9 +20,10 @@ export const servicesData = [
     slug: "cross-border-consulting",
     title: "Cross-Border Consulting",
     description:
-      "Expert guidance on navigating legal, cultural, and economic complexities.",
+      "Supports businesses looking to expand into new countries with confidence and clarity",
     icon: "🤝",
     fullDescription: "Add your full description here later.",
+    link: "/Border",
   },
   {
     slug: "Training",
@@ -31,6 +32,7 @@ export const servicesData = [
       "We empower companies to activate new markets and start selling effectively.",
     icon: "📜",
     fullDescription: "Add your full description here later.",
+    link: "/Training",
   },
   /*{
     slug: "international-market-research",

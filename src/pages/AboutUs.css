@@ -111,7 +111,7 @@
   transform: translateY(-10px);
 }
 
-.value-icon {
+.value-icon-padding {
   font-size: 3em;
   margin-bottom: 15px;
   display: block;

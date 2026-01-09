@@ -5,7 +5,7 @@ import Badge from "../common/Badge";
 import "./Hero.css";
 //import "../../styles/global.css";
 import { ctaLinks } from "../../config/ctaLinks";
-import software from "../../assets/Image/so.png";
+import Border from "../../assets/Image/rena2.jpg";
 
 const Hero = () => {
   // Countdown timer state
@@ -40,20 +40,12 @@ const Hero = () => {
         <div>
           {/*<span className="hero-pre">🎯 Software Development Services</span>*/}
 
-          <h1>Software development</h1>
+          <h1>Cross-Border Consulting</h1>
 
           <p className="hero-text hero-sub">
-          We build secure, scalable, and high-performance software solutions tailored to your business needs. From idea to deployment, our team transforms 
-          complex requirements into reliable digital products that drive growth and efficiency.
-          </p>
-
-          {/* Feature Badges */}
-          <div className="feature-badges">
-            <Badge>Software development</Badge>
-            <Badge>Mobile application development</Badge>
-            <Badge>Web Design & Digital Marketing</Badge>
-          </div>
-
+         Our Cross-Border Consulting service supports businesses looking to expand into new countries with confidence and clarity. We guide companies through the complexities of entering foreign markets by providing strategic, regulatory, and operational support. From market entry planning to local partnerships, we help you reduce risks, 
+         understand local business environments, and successfully establish your presence across borders.
+         </p>
           {/* CTA Buttons */}
           <div className="hero-actions">
             <Button
@@ -63,39 +55,19 @@ const Hero = () => {
             >
              Schedule a meeting
             </Button>
-            {/*<Button variant="outline" href={ctaLinks.brochure} external={true}>
-              <Download size={18} />
-              Download Brochure
-            </Button>*/}
+          
           </div>
 
-          {/* Urgency Box 
-          <div className="urgency-box">
-            <div>
-              <strong style={{ color: "var(--danger)" }}>
-                🔥 Next Cohort Closing Soon
-              </strong>
-              <div style={{ fontSize: "13px" }}>Only 15 seats remaining</div>
-            </div>
-            <div className="timer-digits">
-              <span>{timeLeft.days}d</span> :<span>{timeLeft.hours}h</span> :
-              <span>{timeLeft.minutes}m</span>
-            </div>
-          </div> */}
+          
         </div>
 
         {/* Right Column - Video */}
-        <div className="software-image">
+        <div className="hero-image">
           <img
-            src= {software}
+            src= {Border}
             alt="Students collaborating"
           />
-         {/*  <div className="play-button">
-            <Play fill="white" color="white" size={32} />
-          </div>
-         <div className="video-caption">
-            "How I got hired in 3 months" - Jean-Claude
-          </div>*/}
+         
         </div>
       </div>
     </header>

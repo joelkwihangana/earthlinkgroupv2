@@ -5,7 +5,7 @@ import Badge from "../common/Badge";
 import "./Hero.css";
 //import "../../styles/global.css";
 import { ctaLinks } from "../../config/ctaLinks";
-import software from "../../assets/Image/so.png";
+import Tour from "../../assets/Image/rena3.jpg";
 
 const Hero = () => {
   // Countdown timer state
@@ -47,13 +47,6 @@ const Hero = () => {
           and actionable insights to support informed decision-making and sustainable business growth.
           </p>
 
-          {/* Feature Badges */}
-          {/*<div className="feature-badges">
-            <Badge>Software development</Badge>
-            <Badge>Mobile application development</Badge>
-            <Badge>Web Design & Digital Marketing</Badge>
-          </div>*/}
-
           {/* CTA Buttons */}
           <div className="hero-actions">
             <Button
@@ -63,39 +56,19 @@ const Hero = () => {
             >
              Schedule a meeting
             </Button>
-            {/*<Button variant="outline" href={ctaLinks.brochure} external={true}>
-              <Download size={18} />
-              Download Brochure
-            </Button>*/}
+          
           </div>
 
-          {/* Urgency Box 
-          <div className="urgency-box">
-            <div>
-              <strong style={{ color: "var(--danger)" }}>
-                🔥 Next Cohort Closing Soon
-              </strong>
-              <div style={{ fontSize: "13px" }}>Only 15 seats remaining</div>
-            </div>
-            <div className="timer-digits">
-              <span>{timeLeft.days}d</span> :<span>{timeLeft.hours}h</span> :
-              <span>{timeLeft.minutes}m</span>
-            </div>
-          </div> */}
+          
         </div>
 
         {/* Right Column - Video */}
-        <div className="">
+        <div className="hero-image">
           <img
-            src= {software}
+            src= {Tour}
             alt="Students collaborating"
           />
-         {/*  <div className="play-button">
-            <Play fill="white" color="white" size={32} />
-          </div>
-         <div className="video-caption">
-            "How I got hired in 3 months" - Jean-Claude
-          </div>*/}
+         
         </div>
       </div>
     </header>

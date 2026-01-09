@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureCard from "../common/FeatureCard";
-import { featuresTours } from "./featuresTours";
+import { featuresBorder } from "./featuresBorder";
 import "./Features.css";
 
 const Features = () => {
@@ -14,7 +14,7 @@ const Features = () => {
 
         {/* Features Grid */}
         <div className="features-grid">
-          {featuresTours.map((feature) => (
+          {featuresBorder.map((feature) => (
             <FeatureCard
               key={feature.id}
               icon={feature.icon}

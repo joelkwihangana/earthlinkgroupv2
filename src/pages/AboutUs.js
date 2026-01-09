@@ -108,22 +108,22 @@ const AboutUs = () => {
             <h2>Core Values</h2>
             <div className="values-grid">
               <div className="value-card">
-                <span className="value-icon">🌍</span>
+                <span className="value-icon-padding">🌍</span>
                 <h3>Global Perspective</h3>
                 <p>Embracing diverse cultural and economic landscapes</p>
               </div>
               <div className="value-card">
-                <span className="value-icon">🚀</span>
+                <span className="value-icon-padding">🚀</span>
                 <h3>Innovation</h3>
                 <p>Continuously evolving strategies for global success</p>
               </div>
               <div className="value-card">
-                <span className="value-icon">🤝</span>
+                <span className="value-icon-padding">🤝</span>
                 <h3>Partnership</h3>
                 <p>Building long-term, mutually beneficial relationships</p>
               </div>
               <div className="value-card">
-                <span className="value-icon">🛡️</span>
+                <span className="value-icon-padding">🛡️</span>
                 <h3>Integrity</h3>
                 <p>Maintaining highest standards of professionalism</p>
               </div>

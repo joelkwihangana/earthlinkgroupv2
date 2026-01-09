@@ -17,6 +17,8 @@ import "./components/CountryExpansionOpportunities/CountryExpansionOpportunities
 import PlacementAccelerator from "./pages/PlacementAccelerator";
 import Software from "./pages/Software";
 import Tours from "./pages/Tours";
+import Border from "./pages/Border";
+import Training from "./pages/Training";
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
           <Route path="/Placement" element={<PlacementAccelerator />} />
           <Route path="/software" element={<Software />} />
           <Route path="/Tours" element={<Tours />} />
+          <Route path="/Border" element={<Border />} />
+          <Route path="/Training" element={<Training />} />
 
         </Routes>
         <Footer />
