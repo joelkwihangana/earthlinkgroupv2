@@ -4,110 +4,44 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Services.css";
 import "./Software.js";
 import "./Tours.js";
-
-// Service data array
-export const servicesData = [
-  {
-    slug: "International Business Tours",
-    title: "International Business Tours",
-    description:
-      "Participants engage with local stakeholders, visit business hubs, and gain actionable insights.",
-    icon: "🌍",
-    fullDescription: "Add your full description here later.",
-    link: "/Tours",
-  },
-  {
-    slug: "cross-border-consulting",
-    title: "Cross-Border Consulting",
-    description:
-      "Supports businesses looking to expand into new countries with confidence and clarity",
-    icon: "🤝",
-    fullDescription: "Add your full description here later.",
-    link: "/Border",
-  },
-  {
-    slug: "Training",
-    title: "Training",
-    description:
-      "We empower companies to activate new markets and start selling effectively.",
-    icon: "📜",
-    fullDescription: "Add your full description here later.",
-    link: "/Training",
-  },
-  /*{
-    slug: "international-market-research",
-    title: "International Market Research",
-    description:
-      "Deep-dive analysis providing actionable global market insights.",
-    icon: "🔍",
-    fullDescription: "Add your full description here later.",
-  },
-  {
-    slug: "regulatory-compliance",
-    title: "Regulatory Compliance",
-    description: "Comprehensive support for meeting international regulations.",
-    icon: "📜",
-    fullDescription: "Add your full description here later.",
-  },*/
-  {
-    slug: "software",
-    title: "IT Consulting",
-    description:
-      "Smart digital solutions to grow and strengthen online presence.",
-    icon: "💻",
-    fullDescription: "Add your full description here later.",
-    link: "/software",
-  },
-];
+import servicesData from "../data/servicesData.js";
+import "./CardServices.css";
+import Button from "../components/common/Button.jsx";
 
 <div className="contact-hero">
-        <motion.div 
-          className="contact-hero-content"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1>Let's Expand Your Business Together</h1>
-          <p>
-            Connect with our global expansion experts and transform 
-            your international business strategy
-          </p>
-        </motion.div>
-      </div>
+  <motion.div
+    className="contact-hero-content"
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+  >
+    <h1>Let's Expand Your Business Together</h1>
+    <p>
+      Connect with our global expansion experts and transform your international
+      business strategy
+    </p>
+  </motion.div>
+</div>;
 
 // Single Service Card Component
 const ServiceCard = ({ service, index }) => {
   const navigate = useNavigate();
 
   return (
-    <motion.div
-      className="service-card"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.15, duration: 0.5 }}
-    >
-      <div className="service-card-header">
-        <span className="service-icon">{service.icon}</span>
-        <h3>{service.title}</h3>
+    <div class="card">
+      <div class="content">
+        <div className="cardHeader">
+          <span class="card-icon">{service.icon}</span>
+          <h3>{service.title}</h3>
+        </div>
+
+        <p class="para">{service.description}</p>
+        <Button onClick={() => navigate(service.link)} className="card-cta">
+          Learn More
+        </Button>
       </div>
-
-      <p className="service-description">{service.description}</p>
-
-      <motion.button
-        className="learn-more-btn"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={() => navigate(service.link)}
-
-        // Direct link, no 'placement'
-      >
-        Learn More
-      </motion.button>
-    </motion.div>
-    
+    </div>
   );
-  
 };
 
 // Main Services Page Component
@@ -129,6 +63,7 @@ const Services = () => {
       <div className="services-grid">
         {servicesData.map((service, index) => (
           <ServiceCard key={service.slug} service={service} index={index} />
+          // <Cardservice />
         ))}
       </div>
     </div>
