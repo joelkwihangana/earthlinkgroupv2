@@ -81,7 +81,7 @@ const countries = [
     description:
       "An emerging tech hub with significant potential in digital transformation and innovation. Cameroon offers diverse opportunities across multiple sectors.",
     economicOverview:
-      "Cameroon has a mixed economy with a focus on agriculture, oil, and emerging service sectors. The government is actively promoting digital transformation and technological innovation.",
+      "Gabon's economy is an upper-middle-income, resource-rich nation heavily dependent on oil and mining (manganese), which dominate exports and GDP, though oil reserves are declining. Despite high per capita income, poverty and unemployment persist due to the non-labor-intensive nature of resource extraction. The government is pursuing diversification through the Emerging Gabon strategy, focusing on processing raw materials, boosting agriculture, developing services (like tourism and finance), and improving the business climate, though challenges like weak governance and poor infrastructure remain. ",
     technologicalLandscape:
       "Growing mobile and internet penetration, increasing digital literacy, and government support for tech initiatives create a promising environment for technological investments.",
     challengesAndOpportunities: [
@@ -106,7 +106,7 @@ const countries = [
       "Remote Work Solutions",
     ],
     description:
-      "Growing economy with increasing digital infrastructure and investment opportunities.",
+      "Zambia is a landlocked, plateau country in Southern Africa known for its rich copper resources, abundant wildlife, spectacular waterfalls like Victoria Falls, and the mighty Zambezi River. A former British protectorate, it gained independence in 1964, with Lusaka as the capital, and maintains a democratic system, though it struggles with poverty despite economic growth centered on mining and natural resources. The nation boasts diverse ecosystems, including vast national parks and floodplains, and is recognized for its friendly people and political stability. ",
     economicOverview:
       "Zambia has a growing economy with a strong focus on mining, agriculture, and emerging service sectors. The government is actively promoting digital transformation and technological innovation.",
     technologicalLandscape:

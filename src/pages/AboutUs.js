@@ -156,7 +156,15 @@ const AboutUs = () => {
           Connect with our experts and unlock your business's international
           potential
         </p>
-        <button className="cta-button">Schedule Consultation</button>
+        <button  className="cta-button">
+        <a
+        href="https://calendly.com/earthlinkgroup"
+        target="_blank"
+        rel="noopener noreferrer"
+>
+        Schedule Consultation
+        </a>
+        </button>  
       </motion.div>
     </div>
   );
