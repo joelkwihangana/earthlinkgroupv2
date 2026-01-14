@@ -41,7 +41,7 @@ const HeroSection = () => {
         >
           <h1>Expand Your Business Globally with Confidence</h1>
           <p>
-            EarthLink Group is your strategic partner in international business expansion. 
+            EarthLink Group is your strategic partner in international business expansion and exposure. 
             We provide comprehensive solutions to help companies overcome cross-border challenges, 
             navigate complex markets, and unlock global growth opportunities.
           </p>
