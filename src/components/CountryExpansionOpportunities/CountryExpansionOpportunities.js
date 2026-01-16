@@ -135,7 +135,7 @@ const countries = [
     description:
       "Challenging market with unique opportunities for innovative technological interventions.",
     economicOverview:
-      "The Central African Republic has a fragile economy with a focus on agriculture, mining, and emerging service sectors. The government is actively promoting digital transformation and technological innovation.",
+      "Mozambique's economy, growing since its civil war, relies heavily on agriculture, services, and emerging extractives (especially gas), with services contributing most to GDP, agriculture employing most people, and large gas projects driving future growth despite challenges like poverty, infrastructure gaps, and regional instability, supported by reforms and foreign investment but facing risks from inflation and debt. ",
     technologicalLandscape:
       "Limited digital infrastructure, low internet penetration, and a need for humanitarian tech solutions create a challenging environment for technological investments.",
     challengesAndOpportunities: [
@@ -162,7 +162,7 @@ const countries = [
     description:
       "Developing nation with strong potential for technological leapfrogging.",
     economicOverview:
-      "Malawi has a growing economy with a strong focus on agriculture, manufacturing, and emerging service sectors. The government is actively promoting digital transformation and technological innovation.",
+      "Tanzania's economy is characterized by robust, consistent growth (averaging 6-7% pre-pandemic), driven by strong sectors like agriculture, mining, tourism, and infrastructure, positioning it as an East African economic player with a focus on diversification and industrialization under President Samia Suluhu Hassan's vision. While boasting significant potential and attracting investment, challenges include a large informal sector, persistent poverty (despite growth), reliance on commodities, and the need for increased formal employment and human capital development to reach upper-middle-income status. ",
     technologicalLandscape:
       "Increasing mobile and internet penetration, growing digital literacy, and government support for tech initiatives create a promising environment for technological investments.",
     challengesAndOpportunities: [
@@ -189,7 +189,7 @@ const countries = [
     description:
       "Emerging market with growing technological infrastructure and investment potential.",
     economicOverview:
-      "The Republic of the Congo has a growing economy with a strong focus on oil and gas, mining, and emerging service sectors. The government is actively promoting digital transformation and technological innovation.",
+      "The Democratic Republic of Congo (DRC) (DRC) boasts vast mineral wealth, particularly copper and cobalt, driving its resource-dependent economy, with significant growth projected (around 6-7% annually), but it struggles with poverty, high inflation, and major infrastructure deficits, relying heavily on commodity exports like minerals (cobalt, copper) to China and importing finished goods, despite potential in agriculture and ongoing reforms to develop its digital economy. ",
     technologicalLandscape:
       "Increasing mobile and internet penetration, growing digital literacy, and government support for tech initiatives create a promising environment for technological investments.",
     challengesAndOpportunities: [

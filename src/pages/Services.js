@@ -7,6 +7,7 @@ import "./Tours.js";
 import servicesData from "../data/servicesData.js";
 import "./CardServices.css";
 import Button from "../components/common/Button.jsx";
+import "./ContactUs.css"
 
 <div className="contact-hero">
   <motion.div
