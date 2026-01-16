@@ -11,7 +11,7 @@ import {
   FaPlane
 } from "react-icons/fa";
 import "./GlobalReach.css";
-import businessImage from "../../assets/map.jpeg";
+import businessImage from "../../assets/Image/Mapp.jpeg";
 
 const GlobalReach = () => {
   const { t } = useTranslation();
